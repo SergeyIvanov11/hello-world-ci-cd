@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        checkout scm
+        git branch: 'master',
+                    url: 'https://github.com/SergeyIvanov11/hello-world-ci-cd',
+                    credentialsId: '4e54e4cc-df0c-43c2-bd11-1c7854d71b9e'
       }
     }
     stage('Build & Test') {
