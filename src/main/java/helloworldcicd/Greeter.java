@@ -17,15 +17,28 @@ import java.util.Scanner;
 инкрементировать его и создавать тег на последнем коммите мастера
  */
 public class Greeter {
-    public static void main(String[] args) throws UnsupportedEncodingException {
+
+    private Greeter() {
+        throw new UnsupportedOperationException("Utility class");
+    }
+    /**
+     * Main entry point.
+     * @param args command-line arguments
+     */
+    public static void main(final String[] args) throws UnsupportedEncodingException {
         System.setOut(new PrintStream(System.out, true, "UTF-8"));
         System.out.println("Пожалуйста, введите Ваше имя ");
         Scanner in = new Scanner(System.in);
         String name = in.nextLine();
         greet(name);
     }
-
-    public static void greet(String name) {
-        System.out.println("Приветствуем Вас, " + name + ", на нашем сервере! Добро пожаловать!");
+    /**
+     * Returns greeting message.
+     * @param name user name
+     * @return greeting text
+     */
+    public static void greet(final String name) {
+        System.out.println("Приветствуем Вас, " + name
+                + ", на нашем сервере! Добро пожаловать!");
     }
 }
