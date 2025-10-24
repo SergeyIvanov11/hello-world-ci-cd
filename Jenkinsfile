@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         jdk 'jdk-19'
-        maven 'maven-3.9'
+        maven 'mvn-3.9'
     }
 
     environment {
