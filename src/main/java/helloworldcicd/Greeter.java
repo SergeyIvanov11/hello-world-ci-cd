@@ -16,7 +16,7 @@ import java.util.Scanner;
 При ее  запуске дженкинс должен вытягивать последний тег из мастер ветки,
 инкрементировать его и создавать тег на последнем коммите мастера
  */
-public class Greeter {
+public final class Greeter {
 
     private Greeter() {
         throw new UnsupportedOperationException("Utility class");
@@ -25,8 +25,11 @@ public class Greeter {
      * Main entry point.
      * @param args command-line arguments
      */
-    public static void main(final String[] args) throws UnsupportedEncodingException {
-        System.setOut(new PrintStream(System.out, true, "UTF-8"));
+    public static void main(final String[] args)
+            throws UnsupportedEncodingException {
+        System.setOut(new PrintStream(System.out,
+                true,
+                "UTF-8"));
         System.out.println("Пожалуйста, введите Ваше имя ");
         Scanner in = new Scanner(System.in);
         String name = in.nextLine();
