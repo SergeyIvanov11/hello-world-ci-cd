@@ -14,7 +14,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                     url: 'https://github.com/SergeyIvanov11/hello-world-ci-cd.git',
                     credentialsId: 'github-credentials'
             }
