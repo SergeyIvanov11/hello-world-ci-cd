@@ -38,7 +38,6 @@ public final class Greeter {
     /**
      * Returns greeting message.
      * @param name user name
-     * @return greeting text
      */
     public static void greet(final String name) {
         System.out.println("Приветствуем Вас, " + name
