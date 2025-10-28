@@ -8,4 +8,5 @@
 - * Сделать ручную джобу по созданию релизного тега в GIT.
 При ее  запуске дженкинс должен вытягивать последний тег из мастер ветки,
 инкрементировать его и создавать тег на последнем коммите мастера
+
 [Класс](https://github.com/SergeyIvanov11/hello-world-ci-cd/blob/master/src/main/java/helloworldcicd/Greeter.java)
